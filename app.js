@@ -1,7 +1,7 @@
-const age = prompt("How old are you?"); // 페이지를 멈추게해서 더이상 사용하지 않아
+const title = document.getElementById("title");
+title.innerHTML = 'Got you!'
 
-if (isNaN(age)) {
-    console.log("Please write a number")
-} else {
-    console.log("Thank you for writing your age")
-}
+console.dir(title)
+
+console.log(title.id)
+console.log(title.className)
