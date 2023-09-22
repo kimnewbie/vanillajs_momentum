@@ -1,8 +1,3 @@
-const calculator = {
-    plus: function (a, b) {
-        return a + b
-    }
-};
+const age = prompt("How old are you?"); // 페이지를 멈추게해서 더이상 사용하지 않아
 
-const plusResult = calculator.plus(2, 5);
-console.log(plusResult);
+console.log(age)
