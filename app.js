@@ -1,13 +1,8 @@
-const hellos = document.getElementsByClassName('hello')
-// const title = document.getElementsByTagName('h1');
-const title = document.querySelectorAll('.hello h1');
-const firstChild = document.querySelector('.hello h1:first-child');
+const title = document.querySelector('div.hello:first-child h1');
 
-const findById = document.getElementById("hello");
-const findById2 = document.querySelector("#hello");
 
-console.log(hellos)
-console.log(title)
-console.log(firstChild)
-console.log(findById)
-console.log(findById2)
+function handleTitleClick() {
+    title.style.color = "orange";
+}
+
+title.addEventListener("click", handleTitleClick); 
