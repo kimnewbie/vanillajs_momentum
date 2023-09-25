@@ -14,9 +14,18 @@ function onLoginSubmit(event) {
 }
 
 function paintGreetings(username) {
-    greeting.innerText = `Hello, ${username}!`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
     loginForm.classList.add(HIDDEN_CLASSNAME);
+    const date = new Date();
+    const hours = date.getHours();
+
+    if (hours < 12 && hours > 0) {
+        greeting.innerText = `Good Morning ${username}`;
+    } else if (hours > 12 && hours < 18) {
+        greeting.innerText = `Good Afternoon ${username}`;
+    } else {
+        greeting.innerText = `Good Night ${username}`;
+    }
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
@@ -24,8 +33,14 @@ const savedUsername = localStorage.getItem(USERNAME_KEY);
 if (savedUsername === null) {
     // show the form
     loginForm.classList.remove(HIDDEN_CLASSNAME);
-    loginForm.addEventListener('submit', onLoginSubmit);
+    loginForm.addEventListener('keydown', (event) => {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            loginForm.addEventListener('submit', onLoginSubmit);
+            alert('hi');
+        }
+    });
 } else {
-    // show the greetings  
+    // show the greetings   
     paintGreetings(savedUsername);
 }
