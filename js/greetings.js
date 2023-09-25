@@ -6,6 +6,7 @@ const HIDDEN_CLASSNAME = "hidden"; // string만 포함된 변수는 대문자로
 const USERNAME_KEY = "username"
 
 function onLoginSubmit(event) {
+    alert('got here!')
     event.preventDefault();
     loginForm.classList.add(HIDDEN_CLASSNAME);
     const username = loginInput.value;
@@ -35,9 +36,7 @@ if (savedUsername === null) {
     loginForm.classList.remove(HIDDEN_CLASSNAME);
     loginForm.addEventListener('keydown', (event) => {
         if (event.keyCode === 13) {
-            event.preventDefault();
             loginForm.addEventListener('submit', onLoginSubmit);
-            alert('hi');
         }
     });
 } else {
