@@ -1,35 +1,35 @@
 const quotes = [
     {
         quote: "Genius is one percent inspiration and ninety-nine percent perspiration.",
-        author: "Thomas Edison, type.fit"
+        author: "Thomas Edison"
     },
     {
         quote: "You can observe a lot just by watching.",
-        author: "Yogi Berra, type.fit"
+        author: "Yogi Berra"
     },
     {
         quote: "A house divided against itself cannot stand.",
-        author: "Abraham Lincoln, type.fit"
+        author: "Abraham Lincoln"
     },
     {
         quote: "Difficulties increase the nearer we get to the goal.",
-        author: "Johann Wolfgang von Goethe, type.fit"
+        author: "Johann Wolfgang von Goethe"
     },
     {
         quote: "Fate is in your hands and no one elses",
-        author: "Byron Pulsifer, type.fit"
+        author: "Byron Pulsifer"
     },
     {
         quote: "Be the chief but never the lord.",
-        author: "Lao Tzu, type.fit"
+        author: "Lao Tzu"
     },
     {
         quote: "Nothing happens unless first we dream.",
-        author: "Carl Sandburg, type.fit"
+        author: "Carl Sandburg"
     },
     {
         quote: "Well begun is half done.",
-        author: "Aristotle, type.fit"
+        author: "Aristotle"
     },
     {
         quote: "Life is a learning experience, only if you learn.",
@@ -37,27 +37,27 @@ const quotes = [
     },
     {
         quote: "Self-complacency is fatal to progress.",
-        author: "Margaret Sangster, type.fit"
+        author: "Margaret Sangster"
     },
     {
         quote: "Peace comes from within. Do not seek it without.",
-        author: "Buddha, type.fit"
+        author: "Buddha"
     },
     {
         quote: "What you give is what you get.",
-        author: "Byron Pulsifer, type.fit"
+        author: "Byron Pulsifer"
     },
     {
         quote: "We can only learn to love by loving.",
-        author: "Iris Murdoch, type.fit"
+        author: "Iris Murdoch"
     },
     {
         quote: "Life is change. Growth is optional. Choose wisely.",
-        author: "Karen Clark, type.fit"
+        author: "Karen Clark"
     },
     {
         quote: "You'll see it when you believe it.",
-        author: "Wayne Dyer, type.fit"
+        author: "Wayne Dyer"
     },
     {
         quote: "Today is the tomorrow we worried about yesterday.",
