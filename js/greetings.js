@@ -1,14 +1,15 @@
 const loginForm = document.querySelector('#login-form');
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector('#greeting');
+const todoForm = document.querySelector('#todo-form');
 
 const HIDDEN_CLASSNAME = "hidden"; // string만 포함된 변수는 대문자로 표기
 const USERNAME_KEY = "username"
 
 function onLoginSubmit(event) {
-    alert('got here!')
     event.preventDefault();
     loginForm.classList.add(HIDDEN_CLASSNAME);
+    todoForm.classList.add(HIDDEN_CLASSNAME);
     const username = loginInput.value;
     localStorage.setItem(USERNAME_KEY, username); // add localStorage 
     paintGreetings(username);
@@ -17,6 +18,7 @@ function onLoginSubmit(event) {
 function paintGreetings(username) {
     greeting.classList.remove(HIDDEN_CLASSNAME);
     loginForm.classList.add(HIDDEN_CLASSNAME);
+    todoForm.classList.remove(HIDDEN_CLASSNAME);
     const date = new Date();
     const hours = date.getHours();
 
@@ -34,6 +36,7 @@ const savedUsername = localStorage.getItem(USERNAME_KEY);
 if (savedUsername === null) {
     // show the form
     loginForm.classList.remove(HIDDEN_CLASSNAME);
+    todoForm.classList.add(HIDDEN_CLASSNAME);
     loginForm.addEventListener('keydown', (event) => {
         if (event.keyCode === 13) {
             loginForm.addEventListener('submit', onLoginSubmit);
